@@ -1,0 +1,19 @@
+#grid-container-justice {
+    display: grid;
+    grid-template-areas: "top top top top top"
+    "warning warning warning warning warning"
+    "otp body body body body"
+    "body body body body body"
+    "footer footer footer footer";
+    gap: 16px;
+    color: black;
+}
+
+.flex-container-justice {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-item-justice {
+
+}
