@@ -1,19 +1,92 @@
+.flex-container-justice {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+}
+
+.flex-item-justice {
+    padding: 8px;
+}
+
+header {
+    background-color: navy;
+    color: white;
+    padding: 16px;
+    margin: auto;
+}
+
+#warning-banner {
+    background-color: #FFD440;
+    border-radius: 15px;
+    margin: auto;
+    width: 100%;
+    text-align: left;
+    align-content: center;
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+}
+
+#graphic {
+    background: url(assets/media/court-1.jpg) rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    background-size: cover;
+    color: white;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 32px;
+}
+
 #grid-container-justice {
     display: grid;
-    grid-template-areas: "top top top top top"
+    grid-template-areas:"top top top top top"
+    "graphic graphic graphic graphic graphic"
     "warning warning warning warning warning"
-    "otp body body body body"
-    "body body body body body"
-    "footer footer footer footer";
+    "otp otp purposejustice purposejustice purposejustice"
+    "services services services services services"
+    "footer footer footer footer footer";
     gap: 16px;
     color: black;
 }
 
-.flex-container-justice {
-    display: flex;
-    flex-direction: column;
+#otp {
+    background: #666666;
+    color: white;
+    border-radius: 8px;
+    padding-right: 16px;
 }
 
-.flex-item-justice {
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #666666;
+    color: white;
+    width: 100%;
+    float: left;
+}
 
+#navbar-parent {
+    padding: 0;
+    overflow: visible;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: Cabin;
+}
+
+p {
+    max-width: 90%;
+}
+
+@media (max-width: 768px) {
+    .flex-container-justice {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
