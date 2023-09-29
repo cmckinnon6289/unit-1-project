@@ -1,0 +1,85 @@
+/* Common styling. In case of mess, use this to reset. */
+
+.grid-container-justice {
+    display: grid;
+    grid-template-areas:"top top top top top"
+    "graphic graphic graphic graphic graphic"
+    "warning warning warning warning warning"
+    "intro intro intro intro intro"
+    "services services services services services"
+    "footer footer footer footer footer";
+    gap: 16px;
+    color: black;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #666666;
+    color: white;
+    width: 100%;
+    float: left;
+}
+
+header {
+    background-color: navy;
+    color: white;
+    padding: 16px;
+    margin: auto;
+}
+
+.navbar-parent {
+    padding: 0;
+    overflow: visible;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: Cabin;
+}
+
+p {
+    max-width: 90%;
+}
+
+footer {
+    /*position: absolute;
+    margin-top: auto;
+    bottom: 0;
+    height: 2.5rem;
+    width: 100vw;*/
+    background-color: black;
+    padding: 16px;
+    color: white;
+    overflow-x: hidden;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    padding-right: 32px;
+    display: inline;
+    /*a:link {
+        color: white;
+    }*/
+}
+
+footer ul li a {
+    color: white;
+}
+
+footer ul li a:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .flex-container-justice {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
