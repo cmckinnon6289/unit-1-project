@@ -1,3 +1,8 @@
+:root {
+    --grey-dark: #666666;
+    --grey-light: #CCCCCC;
+}
+
 .flex-container-justice {
     display: flex;
     flex-direction: row;
@@ -28,7 +33,7 @@ header {
     vertical-align: middle;
 }
 
-#graphic {
+#index-graphic {
     background: url(assets/media/court-1.jpg) rgba(0,0,0,0.5);
     background-blend-mode: multiply;
     background-repeat: no-repeat;
@@ -38,6 +43,19 @@ header {
     padding-top: 64px;
     padding-bottom: 64px;
     padding-left: 32px;
+}
+
+#news-graphic {
+    background: url(assets/media/news-1.jpg) rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-size: cover;
+    color: white;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 32px;
+    border-left: 8px solid #0369AC;
 }
 
 .grid-container-justice {
@@ -50,6 +68,13 @@ header {
     "footer footer footer footer footer";
     gap: 16px;
     color: black;
+}
+
+#grid-services {
+    display: grid;
+    grid-template-areas: "a b c"
+    "d e f";
+    gap: 8px;
 }
 
 #otp {
@@ -94,8 +119,8 @@ footer {
     /*position: absolute;
     margin-top: auto;
     bottom: 0;
-    height: 2.5rem;*/
-    width: 100%;
+    height: 2.5rem;
+    width: 100vw;*/
     background-color: black;
     padding: 16px;
     color: white;
