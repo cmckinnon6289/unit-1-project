@@ -1,6 +1,12 @@
 :root {
     --grey-dark: #666666;
+    --grey-darkest: #4D4D4D;
+    --grey-lightest: #F2F2F2;
     --grey-light: #CCCCCC;
+    --grey-medium: #999999;
+    --bulletin-release: #49A7A2;
+    --important-news: #CD0000;
+    --gov: navy;
 }
 
 .flex-container-justice {
@@ -58,13 +64,47 @@ header {
     border-left: 8px solid #0369AC;
 }
 
-.grid-container-justice {
+#grid-container-index {
     display: grid;
     grid-template-areas:"top top top top top"
     "graphic graphic graphic graphic graphic"
     "warning warning warning warning warning"
     "intro intro intro intro intro"
     "services services services services services"
+    "footer footer footer footer footer";
+    gap: 16px;
+    color: black;
+}
+
+.div-button {
+    text-decoration: none;
+    color: black;
+}
+
+#featured-news .div-button {
+    border-left: 8px solid var(--important-news);
+    background-color: var(--grey-light);
+}
+
+#other-news .div-button {
+    border-left: 8px solid var(--bulletin-release);
+    background-color: var(--grey-lightest);
+    max-width: 40%;
+}
+
+.news-header {
+    background-color: var(--grey-darkest);
+    color: white;
+    padding: 16px;
+    margin: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:"top top top top top"
+    "graphic graphic graphic graphic graphic"
+    "body1 body1 body1 body1 body1"
+    "body2 body2 body2 body2 body2"
     "footer footer footer footer footer";
     gap: 16px;
     color: black;
@@ -90,10 +130,20 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #666666;
-    color: white;
+    background-color: var(--grey-medium);
+    font-weight: bold;
+    color: black;
     width: 100%;
     float: left;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    padding-right: 32px;
+    display: inline;
 }
 
 .navbar-parent {
@@ -119,12 +169,13 @@ footer {
     /*position: absolute;
     margin-top: auto;
     bottom: 0;
-    height: 2.5rem;
-    width: 100vw;*/
+    margin-right: 0;*/
+    width: 100%;
     background-color: black;
     padding: 16px;
     color: white;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 footer ul {

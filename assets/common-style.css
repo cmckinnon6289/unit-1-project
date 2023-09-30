@@ -1,12 +1,12 @@
 /* Common styling. In case of mess, use this to reset. */
 
-.grid-container-justice {
+.grid-container {
     display: grid;
     grid-template-areas:"top top top top top"
     "graphic graphic graphic graphic graphic"
     "warning warning warning warning warning"
-    "intro intro intro intro intro"
-    "services services services services services"
+    "body1 body1 body1 body1 body1"
+    "body2 body2 body2 body2 body2"
     "footer footer footer footer footer";
     gap: 16px;
     color: black;
