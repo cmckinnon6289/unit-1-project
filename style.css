@@ -110,6 +110,12 @@ header {
     color: black;
 }
 
+.nav-grid {
+    display: grid;
+    grid-template-areas: "a b";
+    grid-template-columns: 1fr auto;
+}
+
 #grid-services {
     display: grid;
     grid-template-areas: "a b c"
@@ -139,6 +145,7 @@ nav {
 
 nav ul {
     list-style: none;
+    margin: 0;
 }
 
 nav ul li {
