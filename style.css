@@ -132,11 +132,14 @@ header {
     grid-template-columns: 1fr auto;
 }
 
-#grid-services {
-    display: grid;
-    grid-template-areas: "a b c"
-    "d e f";
-    gap: 8px;
+.services-item {
+    flex: 1 1 calc(33.33% - 10px); /* Adjust the percentage as needed, and subtract any margin/padding */
+    margin: 8px; /* Add margin between items as needed */
+    max-width: calc(33.33% - 16px); /* Adjust the max-width to match the flex value */
+}
+
+#services {
+    flex-wrap: wrap;
 }
 
 #otp {
@@ -222,9 +225,16 @@ footer ul li a:hover {
     text-decoration: none;
 }
 
+input {
+    margin-right: 16px;
+}
+
 @media (max-width: 768px) {
     .flex-container-justice {
         flex-direction: column;
         flex-wrap: wrap;
+    }
+    .services-item {
+        width: 100%;
     }
 }

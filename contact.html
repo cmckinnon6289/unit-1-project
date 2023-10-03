@@ -9,7 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/> <!--material symbols, used in nav bar and warning-->
     </head>
     <body>
-        <div class="grid-container-justice">
+        <div class="grid-container" style="gap: 0;">
             <div class="navbar-parent" class="flex-container-justice">
                 <nav class="flex-item-justice" id="navbar">
                     <div class="nav-grid">
@@ -30,12 +30,41 @@
                     <h2>Department of Courts and Justice - Government of Lorem</h2>
                 </div>
             </header>
+            <div class="flex-container-justice" style="grid-area: graphic / graphic / body1 / body1; margin-bottom: 0; padding-bottom: 0;">
+                <div class="flex-item-justice">
+                    <h2>Contact us</h2>
+                    <p>Any inquiries you may have for the Department of Courts and Justice may be submitted through this form. <strong><mark>Do not submit personal or confidential information through this form.</mark></strong> You will receive a response within the legislated minimum time frame of 5 business days. You may be contacted by physical mail if our response contains sensitive information.</p>
+                </div>
+            </div>
+            <div class="flex-container-justice" style="grid-area: body2; margin-top: 0; padding-top: 0;">
+                <div class="flex-item-justice" id="form">
+                    <form>
+                        <label for="name"><strong>Full name</strong> (required)</label><br>
+                        <input type="text" id="name" style="width: 100%"><br><br>
+                        <label for="email"><strong>Email address</strong> (required)</label><br>
+                        <input type="email" id="email" style="width:100%"><br><br>
+                        <label for="address"><strong>Mailing address</strong> (required)</label><br>
+                        <textarea style="resize: none;" cols="50" rows="3" id="address"></textarea><br><br>
+                        <label for="preferred"><strong>Preferred contact method</strong> (required)</label><br>
+                        <input type="radio" id="email_preferred" name="contact_method" value="Email">
+                        <label for="email_preferred">Email</label><br>
+                        <input type="radio" id="house_preferred" name="contact_method" value="Physical mail">
+                        <label for="house_preferred">Physical mail</label><br><br>
+                        <label for="subject"><strong>Subject of your inquiry</strong> (required)</label><br>
+                        <input type="text" style="width:100%;" id="subject"><br><br>
+                        <label for="message"><strong>Message</strong> (required)</label><br>
+                        <textarea style="resize: none;" cols="50" rows="7"></textarea><br><br>
+                        <input type="submit" id="submit" value="Submit inquiry">             
+                    </form>
+                </div>
+            </div>
             <footer style="grid-area: footer;">
                 <ul>
                     <li><a href="https://www.youtube.com/watch?v=q2tJqO6nCSc">State-Sponsored Entertainment</a></li>
                     <li><a href="https://fonts.google.com/icons">Icons</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="/news.html">News</a></li>
+                    <li><a href="/contact.html">Contact us</a></li>
+                    <li><a href="https://designsystem.ontario.ca/">Design inspiration</a></li>
                 </ul>
                 <p>&copy; King's Printer for Lorem, 2023. All rights reserved.</p>
             </footer>
