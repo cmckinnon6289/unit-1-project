@@ -100,12 +100,14 @@ header {
 #featured-news .div-button {
     border-left: 8px solid var(--important-news);
     background-color: var(--grey-light);
+    box-shadow: 3px 3px 6px #999999;
 }
 
 #other-news .div-button {
     border-left: 8px solid var(--bulletin-release);
     background-color: var(--grey-lightest);
     max-width: 40%;
+    box-shadow: 3px 3px 6px #999999;
 }
 
 .news-header {
