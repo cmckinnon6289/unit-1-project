@@ -77,6 +77,18 @@ header {
     padding-left: 32px;
 }
 
+#elaws-graphic {
+    background: url(assets/media/library-1.jpg) rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position-y: 45%;
+    background-size: cover;
+    color: white;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 32px;
+}
+
 /* End of page graphics */
 
 #grid-container-index {
