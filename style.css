@@ -1,3 +1,4 @@
+/* variables for colours so that i don't have to change a million things if i wanna change the colours */
 :root {
     --grey-dark: #666666;
     --grey-darkest: #4D4D4D;
@@ -9,36 +10,50 @@
     --gov: navy;
 }
 
+/* default flex container */
+
 .flex-container-justice {
     display: flex;
     flex-direction: row;
     padding: 8px;
 }
 
+/* flex item, goes in a flex container */
+
 .flex-item-justice {
     padding: 8px;
 }
+
+/* default page header stuff (ie: department header, gov header, etc.) */
 
 header {
     background-color: navy;
     color: white;
     padding: 16px;
+    /* takes up whole space */
     margin: auto;
 }
+
+/* styling for warning banners (ie: ) */
 
 #warning-banner {
     background-color: #FFD440;
     border-radius: 15px;
+    /* takes up whole space */
     width: auto;
     text-align: left;
     margin-bottom: 8px;
 }
 
+/* helps keep things centred and neat */
 .material-symbols-outlined {
     vertical-align: middle;
 }
 
 /* Page Graphics */
+
+/* general trend: make sure the image makes sense and looks good on the page, put a slight shade
+over top the image, make the graphic big */
 
 #index-graphic {
     background: url(assets/media/court-1.jpg) rgba(0,0,0,0.5);
@@ -91,6 +106,8 @@ header {
 
 /* End of page graphics */
 
+/* grid container for the index page (different page layout) */
+
 #grid-container-index {
     display: grid;
     grid-template-areas:"top top top top top"
@@ -103,16 +120,22 @@ header {
     color: black;
 }
 
+/* news cards (removes hyperlink underline and makes text colour uniform) */
+
 .div-button {
     text-decoration: none;
     color: black;
 }
+
+/* featured news cards (red siding, darker background) */
 
 #featured-news .div-button {
     border-left: 8px solid var(--important-news);
     background-color: var(--grey-light);
     box-shadow: 3px 3px 6px #999999;
 }
+
+/* other news cards (blue siding, lighter background) */
 
 #other-news .div-button {
     border-left: 8px solid var(--bulletin-release);
@@ -121,12 +144,16 @@ header {
     box-shadow: 3px 3px 6px #999999;
 }
 
+/* header for the news releases (for each article) */
+
 .news-header {
     background-color: var(--grey-darkest);
     color: white;
     padding: 16px;
     margin: auto;
 }
+
+/* grid container for every other page (standard layout) */
 
 .grid-container {
     display: grid;
@@ -139,11 +166,15 @@ header {
     color: black;
 }
 
+/* navbar organizational grid */
+
 .nav-grid {
     display: grid;
     grid-template-areas: "a b";
     grid-template-columns: 1fr auto;
 }
+
+/* styling for each of the services on index.html */
 
 .services-item {
     flex: 1 1 calc(33.33% - 10px); /* Adjust the percentage as needed, and subtract any margin/padding */
@@ -151,9 +182,13 @@ header {
     max-width: calc(33.33% - 16px); /* Adjust the max-width to match the flex value */
 }
 
+/* allows wrapping */
+
 #services {
     flex-wrap: wrap;
 }
+
+/* on this page styling; rounds the edges, gives some padding, and colours the text */
 
 #otp {
     background: #666666;
@@ -163,6 +198,8 @@ header {
     min-width: 20%;
     margin-right: 32px;
 }
+
+/* navbar styling; fixed on the page so that it can scroll with the user */
 
 nav {
     position: fixed;
@@ -175,20 +212,28 @@ nav {
     float: left;
 }
 
+/* invisible bullet points in the navbar */
+
 nav ul {
     list-style: none;
     margin: 0;
 }
+
+/* display li in-line in navbar with padding */
 
 nav ul li {
     padding-right: 32px;
     display: inline;
 }
 
+/* parent div to the navbar. no padding, makes sure overflow is visible */
+
 .navbar-parent {
     padding: 0;
     overflow: visible;
 }
+
+/* body styling. cancels horizontal scroll, sets default text size and font */
 
 body {
     margin: 0;
@@ -197,13 +242,19 @@ body {
     scroll-behavior: auto;
 }
 
+/* max-width for p tags. done for accessibility purposes */
+
 p {
     max-width: 90%;
 }
 
+/* links are made bold in the services on index.html */
+
 #services a {
     font-weight: bold;
 }
+
+/* footer styling. take up all available space, hide the overflow (cancels horizontal scroll bar). */
 
 footer {
     /*position: absolute;
@@ -218,10 +269,14 @@ footer {
     box-sizing: border-box;
 }
 
+/* same as navbar links, makes invisible bullet points */
+
 footer ul {
     list-style: none;
     padding-left: 0;
 }
+
+/* same as navbar links, displays them in-line and gives them space */
 
 footer ul li {
     padding-right: 32px;
@@ -231,23 +286,32 @@ footer ul li {
     }*/
 }
 
+/* navbar link text colour */
+
 footer ul li a {
     color: white;
 }
 
+/* hide the underline on the link on hover */
+
 footer ul li a:hover {
     text-decoration: none;
 }
+
+/* margin for inputs (space between inputs and labels (see e-laws)) */
 
 input {
     margin-right: 16px;
 }
 
 @media (max-width: 768px) {
+    /* if the window is less than 768 px wide, make flex column and wrap it */
     .flex-container-justice {
         flex-direction: column;
         flex-wrap: wrap;
     }
+
+    /* if the window is less than 768 px wide, take up 100% of available space and sort by columns*/
     .services-item {
         width: 100%;
         flex: 1 1 100%;
