@@ -10,10 +10,13 @@
     </head>
     <body>
         <div class="grid-container">
+            <!-- navbar for larger screens -->
             <div class="navbar-parent" class="flex-container-justice">
                 <nav class="flex-item-justice" id="navbar">
+                    <!-- grid separating the areas of the navbar -->
                     <div class="nav-grid">
-                        <span style="grid-area: a;"><span class="material-symbols-outlined">account_balance</span> <a href="/index.html" style="color: black;">Government of Lorem</a></span>
+                        <span style="grid-area: a;"><span class="material-symbols-outlined">account_balance</span> <a href="/index.html" style="color: black;">Government of Lorem</a></span> <!-- index link -->
+                        <!-- links to other pages -->
                         <span style="grid-area: b;">
                             <ul style="text-align: justify;">
                                 <style> nav div span ul li a {color: black;} </style>
@@ -25,12 +28,15 @@
                     </div>
                 </nav>
             </div>
+            <!-- news release header -->
             <header class="flex-container-justice news-header" style="grid-area: top; margin-left: 0px; margin-right: 0px; margin-top: 40px;">
                 <div class="flex-item-justice">
                     <h2>Government of Lorem - News Release</h2>
                 </div>
             </header>
+            <!-- content; flex: row on big screens, flex: column on small screens -->
             <div class="flex-container-justice" style="grid-area: body1;">
+                <!-- the news content -->
                 <div class="flex-item-justice">
                     <h1>Statement from the Prime Minister of Lorem</h1>
                     <p>29th of September, 2023</p>
@@ -39,8 +45,10 @@
                     <p>This is not a apology for my politics; I maintain my beliefs on all issues in question. I will, however, apologize for not being representative of the people of Lorem. This is one of the most important principles of our democracy, and it is become clear that I am no longer able to say I uphold that.</p>
                     <p>As a result, I will be going to His Majesty the King tonight to request a general election be held before year's end. It has been a pleasure to serve you all as Prime Minister of Lorem.</p>
                 </div>
+                <!-- sharing information and media contacts -->
                 <div class="flex-item-justice" id="contacts" style="margin-right: 10%;">
                     <h2>Share this news</h2>
+                    <!-- social media links -->
                     <span><a href="https://www.twitter.com"><span class="material-symbols-outlined">share</span></a> Twitter</span>
                     <br>
                     <span><a href="https://www.instagram.com"><span class="material-symbols-outlined">share</span></a> Instagram</span>
@@ -48,15 +56,18 @@
                     <span><a href="javascript:print();"><span class="material-symbols-outlined">print</span></a> Print</span>
                     <br>
                     <hr>
+                    <!-- contact information -->
                     <h2>Media Contacts</h2>
                     <strong>Cola Lizaveta</strong>
                     <p>Press Secretary, Prime Minister's Office</p>
                     <a href="mailto:cmckinnon@bayviewglen.ca">cmckinnon@bayviewglen.ca</a>
                 </div>
             </div>
-            
+            <!-- page footer for all screens -->
             <footer style="grid-area: footer;">
+                <!-- various links enclosed in a ul, bullet points made invisible, items in-line to make for better styling -->
                 <ul>
+                    <!-- "target="_blank"" is to open it in a new page; used for external links-->
                     <li><a href="https://www.youtube.com/watch?v=q2tJqO6nCSc">State-Sponsored Entertainment</a></li>
                     <li><a href="https://fonts.google.com/icons">Icons</a></li>
                     <li><a href="/news.html">News</a></li>

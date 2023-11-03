@@ -10,10 +10,13 @@
     </head>
     <body>
         <div class="grid-container">
+            <!-- navbar for larger screens -->
             <div class="navbar-parent" class="flex-container-justice">
                 <nav class="flex-item-justice" id="navbar">
                     <div class="nav-grid">
-                        <span style="grid-area: a;"><span class="material-symbols-outlined">account_balance</span> <a href="/index.html" style="color: black;">Government of Lorem</a></span>
+                        <!-- grid separating the areas of the navbar -->
+                        <span style="grid-area: a;"><span class="material-symbols-outlined">account_balance</span> <a href="/index.html" style="color: black;">Government of Lorem</a></span> <!-- link to index -->
+                        <!-- links to other pages -->
                         <span style="grid-area: b;">
                             <ul style="text-align: justify;">
                                 <style> nav div span ul li a {color: black;} </style>
@@ -25,14 +28,18 @@
                     </div>
                 </nav>
             </div>
+            <!-- government header -->
             <header class="flex-container-justice" style="grid-area: top; margin-left: 0px; margin-right: 0px; margin-top: 40px;">
                 <div class="flex-item-justice">
                     <h2>Government of Lorem</h2>
                 </div>
             </header>
+            <!-- newsroom graphic -->
             <div class="flex-container-justice" style="grid-area: graphic" id="news-graphic">
                 <h1>Government Newsroom</h1>
             </div>
+            <!-- featured news cards
+            centre aligned on big screens, left-aligned smaller screens -->
             <div class="flex-container-justice" style="grid-area: body1; gap: 16px; justify-content: center;" id="featured-news">
                 <a href="/news/new-supreme-court-justice.html" class="div-button" id="new-judge" style="max-width: 33%">
                     <div class="flex-item-justice">
@@ -55,6 +62,7 @@
                     </div>
                 </a>
             </div>
+            <!-- regular news cards, aligned left -->
             <div class="flex-container-justice" style="grid-area: body2; flex-direction: column; gap: 16px;" id="other-news">
                 <a href="/news/pm-statement-ge.html" class="div-button">
                     <div class="flex-item-justice">
@@ -102,8 +110,11 @@
                     </div>
                 </a>
             </div>
+            <!-- page footer for all screens -->
             <footer style="grid-area: footer;">
+                <!-- various links enclosed in a ul, bullet points made invisible, items in-line to make for better styling -->
                 <ul>
+                    <!-- "target="_blank"" is to open it in a new page; used for external links-->
                     <li><a target="_blank" href="https://www.youtube.com/watch?v=q2tJqO6nCSc">State-Sponsored Entertainment</a></li>
                     <li><a target="_blank" href="https://fonts.google.com/icons">Icons</a></li>
                     <li><a href="/news.html">News</a></li>

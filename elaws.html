@@ -10,10 +10,13 @@
     </head>
     <body>
         <div class="grid-container">
+            <!-- navbar for larger screens -->
             <div class="navbar-parent" class="flex-container-justice">
                 <nav class="flex-item-justice" id="navbar">
                     <div class="nav-grid">
-                        <span style="grid-area: a;"><span class="material-symbols-outlined">gavel</span> <a href="/index.html" style="color: black;">Lorem Justice</a></span>
+                        <!-- grid separating the areas of the navbar -->
+                        <span style="grid-area: a;"><span class="material-symbols-outlined">gavel</span> <a href="/index.html" style="color: black;">Lorem Justice</a></span> <!-- link to index -->
+                        <!-- links to other pages -->
                         <span style="grid-area: b;">
                             <ul style="text-align: justify;">
                                 <style> nav div span ul li a {color: black;} </style>
@@ -25,24 +28,30 @@
                     </div>
                 </nav>
             </div>
+            <!-- department banner -->
             <header class="flex-container-justice" style="grid-area: top; margin-left: 0px; margin-right: 0px; margin-top: 40px;">
                 <div class="flex-item-justice">
                     <h2>Department of Courts and Justice - Government of Lorem</h2>
                 </div>
             </header>
+            <!-- e-laws graphic -->
             <div class="flex-container justice" style="grid-area: graphic;" id="elaws-graphic">
                 <div class="flex-item-justice">
                     <h2>e-Laws</h2>
                 </div>
             </div>
+            <!-- explanatory paragraph -->
             <div class="flex-container-justice" style="grid-area: body1;">
                 <div class="flex-item-justice">
                     <h2>Laws of Lorem</h2>
                     <p>The following documents are the laws of Lorem. The PDF versions of each law are the offical versions, and take precedence over the HTML versions in the event of a discrepancy.</p>
                 </div>
             </div>
+            <!-- using flex to put the search box next to the laws -->
             <div class="flex-container-justice" style="grid-area: body2; flex-direction: row;">
+                <!-- search-by-topic form -->
                 <div class="flex-item-justice" style="background-color: var(--grey-light); padding: 16px;">
+                    <!-- checkboxes with a submit button that doesnt work that simulates seaching -->
                     <form action="">
                         <p style="font-weight: bold;">Topics</p>
                         <input type="checkbox" id="const">
@@ -60,7 +69,9 @@
                         <input type="submit" value="Search">
                     </form>
                 </div>
+                <!-- laws container -->
                 <div class="flex-item-justice">
+                    <!-- each div is a different law -->
                     <div id="pa">
                         <strong>Police Act, R.S.L. 2023</strong><br>
                         <p>An Act to establish the Powers, Duties, Obligations, Responsibilities, and Roles of Officers in Lorem</p>
@@ -74,8 +85,11 @@
                     </div>
                 </div>
             </div>
+            <!-- page footer for all screens -->
             <footer style="grid-area: footer;">
+                <!-- various links enclosed in a ul, bullet points made invisible, items in-line to make for better styling -->
                 <ul>
+                    <!-- "target="_blank"" is to open it in a new page; used for external links-->
                     <li><a target="_blank" href="https://www.youtube.com/watch?v=q2tJqO6nCSc">State-Sponsored Entertainment</a></li>
                     <li><a target="_blank" href="https://fonts.google.com/icons">Icons</a></li>
                     <li><a href="/news.html">News</a></li>

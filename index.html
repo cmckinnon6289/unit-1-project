@@ -12,10 +12,13 @@
         <script>
             alert('Most of the content is in the "News" and "Contact us" pages. I added some stuff after-the-fact (27 October 2023) to the eLaws page purely to showcase. If it\'s not graded, it\'s not the end of the world.')
         </script>
+        <!-- navbar for larger screens -->
         <div class="navbar-parent" class="flex-container-justice">
             <nav class="flex-item-justice" id="navbar">
                 <div class="nav-grid">
-                    <span style="grid-area: a;"><span class="material-symbols-outlined">gavel</span> <a href="/index.html" style="color: black;">Lorem Justice</a></span>
+                    <!-- grid separating the areas of the navbar -->
+                    <span style="grid-area: a;"><span class="material-symbols-outlined">gavel</span> <a href="/index.html" style="color: black;">Lorem Justice</a></span> <!-- main thing -->
+                    <!-- links to other pages -->
                     <span style="grid-area: b;">
                         <ul style="text-align: justify;">
                             <style> nav div span ul li a {color: black;} </style>
@@ -28,14 +31,17 @@
             </nav>
         </div>
         <div class="grid-container-index">
+            <!-- department banner -->
             <header class="flex-container-justice" style="grid-area: top; margin-left: 0px; margin-right: 0px; margin-top: 40px;">
                 <div class="flex-item-justice">
                     <h2>Department of Courts and Justice - Government of Lorem</h2>
                 </div>
             </header>
+            <!-- page graphic -->
             <div class="flex-container-justice" style="grid-area: graphic;" id="index-graphic">
                 <h1>Justice that matters.</h1>
             </div>
+            <!-- warnings about service disruptions -->            
             <div class="flex-container-justice" style="grid-area: warning; flex-direction: column;">
                 <div class="flex-item-justice" id="warning-banner">
                     <span class="material-symbols-outlined">warning</span>
@@ -47,6 +53,7 @@
                 </div>
             </div>
             <div class="flex-container-justice" style="grid-area: intro; flex-direction: row;">
+                <!-- links to text headers on this page -->
                 <aside class="flex-item-justice" id="otp">
                     <b style="font-size: 150%">On this page:</b>
                     <ol>
@@ -56,16 +63,19 @@
                         <a href="#more-info" style="color: #C5EEFA;"><li>More information</li></a>
                     </ol>
                 </aside>
+                <!-- explanatory paragraph -->
                 <div class="flex-item-justice">
                     <h2>Purpose of the Justice System</h2>
                     <p>The justice system of Lorem is designed to provide a fair, unbiased adjudication of any legal dispute that may rise, and to uphold the principles of fundamental justice established long before us. Lorem's courts and legal staff work diligently to enforce and uphold the laws and constitution, ensuring they are reflective of our strong societal values.</p>
                 </div>
             </div>
             <div class="flex-container-justice" style="grid-area: services; flex-direction: column;">
+                <!-- list of services, using flex to create card-like organization -->
                 <div class="flex-item-justice" id="services-list">
                     <h2>Services</h2>
                     <p>The following are commonly-requested court services. If you need something not listed here, please use the contact form to contact us, or speak to your legal counsel. <strong>Court officials are not allowed to, and will not, provide legal advice of any kind.</strong></p>
                     <div class="flex-container-justice" id="services" style="margin: 0; padding: 0;">
+                        <!-- each .services-item is a different card using flex -->
                         <div class="services-item">
                             <p><a href="forms.html">Court forms</a><br>Any forms required for court proceedings can be found on this page.</p>
                         </div>
@@ -81,18 +91,23 @@
                     </div>
                     <hr>
                 </div>
+                <!-- explanatory paragraph -->
                 <div class="flex-item-justice" id="courts">
                     <h2>Lorem's Courts</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam fuga, fugiat illum perferendis dolorem magni ex facilis alias. Amet sint porro repudiandae provident ipsum nobis. Culpa odit reprehenderit quod ipsam cupiditate. Sit accusantium quidem voluptatibus pariatur animi corporis ea cupiditate ab illum totam quis est, ratione nam magnam omnis in fugiat nobis enim aliquam facere temporibus tempora quae. Quasi, veniam? Exercitationem ad, eius et non, perspiciatis saepe ut libero quos odio sequi incidunt. Autem et, incidunt accusamus dolor blanditiis adipisci, molestias placeat est excepturi assumenda labore voluptatem voluptatibus odit distinctio.</p>
                 </div>
+                <!-- explanatory paragraph -->
                 <div class="flex-item-justice" id="more-info">
                     <h2>More information</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero consequuntur harum ducimus modi ullam natus numquam. Dolorum, repellat autem nesciunt consectetur placeat illo iusto maiores ab tenetur quos rem excepturi.</p>
                 </div>
             </div>
+            <!-- page footer for all screens, using flex -->
             <footer class="flex-container-justice" style="grid-area: footer;">
                 <div class="flex-item-justice">
+                    <!-- various links enclosed in a ul, bullet points made invisible, items in-line to make for better styling -->
                     <ul>
+                        <!-- "target="_blank"" is to open it in a new page; used for external links-->
                         <li><a target="_blank" href="https://www.youtube.com/watch?v=q2tJqO6nCSc">State-Sponsored Entertainment</a></li>
                         <li><a target="_blank" href="https://fonts.google.com/icons">Icons</a></li>
                         <li><a href="/news.html">News</a></li>
@@ -102,6 +117,7 @@
                     <p>&copy; King's Printer for Lorem, 2023. All rights reserved.</p>
                 </div>
             </footer>
+            <!-- things are styled differently at index.html due to different layout -->
         </div>
     </body>
 </html>

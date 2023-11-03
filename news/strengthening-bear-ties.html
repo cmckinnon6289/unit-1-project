@@ -10,10 +10,13 @@
     </head>
     <body>
         <div class="grid-container">
+            <!-- navbar for larger screens -->
             <div class="navbar-parent" class="flex-container-justice">
                 <nav class="flex-item-justice" id="navbar">
+                    <!-- grid separating the areas of the navbar -->
                     <div class="nav-grid">
                         <span style="grid-area: a;"><span class="material-symbols-outlined">account_balance</span> <a href="/index.html" style="color: black;">Government of Lorem</a></span>
+                        <!-- links to other pages -->
                         <span style="grid-area: b;">
                             <ul style="text-align: justify;">
                                 <style> nav div span ul li a {color: black;} </style>
@@ -25,12 +28,15 @@
                     </div>
                 </nav>
             </div>
+            <!-- news release header -->
             <header class="flex-container-justice news-header" style="grid-area: top; margin-left: 0; margin-right: 0px; margin-top: 40px;">
                 <div class="flex-item-justice">
                     <h2>Government of Lorem - News Release</h2>
                 </div>
             </header>
+            <!-- content; flex: row on big screens, flex: column on small screens -->
             <div class="flex-container-justice" style="grid-area: body1;">
+                <!-- the news content -->
                 <div class="flex-item-justice">
                     <h1>Lorem strengthening ties with Bear</h1>
                     <p>22nd of September, 2023</p>
@@ -39,12 +45,15 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe facilis aspernatur ea autem incidunt accusantium, dicta atque ipsam nesciunt quasi reiciendis asperiores architecto reprehenderit non esse ratione nam magni tenetur.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste modi rem perferendis repellat assumenda vitae nulla? Eum sunt neque dignissimos dolor, amet nulla magnam quasi sed doloribus voluptates quis quaerat?</p>
                     <hr>
+                    <!-- quotes -->
                     <h2>Quotes</h2>
                     <p>"This important initiative couldn't have come at a better time. Restaurants provide experiences that bring locally grown food and drink to life, so this collaboration is a natural fit in the ecosystem from farm to table. Restaurants need all the support they can get right now, and this event is a great new way to encourage people to get out there to visit participating restaurants and to try some feature menu items that really celebrate the quality and craft of our local agriculture and restaurants."</p>
                     <strong>Andrew Lo<br>Vice President, Lorem Business Advocacy Group</strong>
                 </div>
+                <!-- sharing information and media contacts -->
                 <div class="flex-item-justice" id="contacts" style="margin-right: 10%;">
                     <h2>Share this news</h2>
+                    <!-- social media links -->
                     <span><a href="https://www.twitter.com"><span class="material-symbols-outlined">share</span></a> Twitter</span>
                     <br>
                     <span><a href="https://www.instagram.com"><span class="material-symbols-outlined">share</span></a> Instagram</span>
@@ -58,9 +67,11 @@
                     <a href="mailto:[EMAIL ADDRESS]">[EMAIL]</a>
                 </div>
             </div>
-            
+            <!-- page footer for all screens -->
             <footer style="grid-area: footer;">
+                <!-- various links enclosed in a ul, bullet points made invisible, items in-line to make for better styling -->
                 <ul>
+                    <!-- "target="_blank"" is to open it in a new page; used for external links-->
                     <li><a href="https://www.youtube.com/watch?v=q2tJqO6nCSc">State-Sponsored Entertainment</a></li>
                     <li><a href="https://fonts.google.com/icons">Icons</a></li>
                     <li><a href="/news.html">News</a></li>
